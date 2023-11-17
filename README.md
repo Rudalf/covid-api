@@ -1,4 +1,4 @@
-# covid-api
+# covid-api - Debreux Romain
 
 ## État d'avancement
 
