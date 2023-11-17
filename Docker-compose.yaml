@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  db:
+    image: postgres
+    container_name: local_pgdb
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: debreux3u
+      POSTGRES_PASSWORD: Fokumi*4
+    volumes:
+      - local_pgdata:/var/lib/postgresql/data
+  api:
+    image: covid-api
+    build: 
+      context: .
+    ports: 
+      - "8080:8080"
+    container_name: container_name
+    depends_on: 
+      db: 
+        condition: service_started
+
+  
+
+volumes:
+  local_pgdata:

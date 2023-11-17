@@ -1,0 +1,19 @@
+GET http://localhost:8080/inscriptions/all
+
+###
+GET http://localhost:8080/api/centres/read
+
+###
+POST http://localhost:8080/api/centres/create 
+Content-Type: application/json
+
+{
+    "adresse" : "Verdun",
+    "nom" : "CHU Verdun",
+    "ville" : "Verdun"
+}
+
+###
+GET http://localhost:8080/centres/ville?ville=Metz
+
+ 

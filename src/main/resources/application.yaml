@@ -1,0 +1,11 @@
+spring:
+  liquibase:
+    enabled: false
+  datasource:
+    url: jdbc:postgresql://local_pgdb:5432/postgres
+    username: debreux3u
+    password: Fokumi*4
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    # hibernate.ddl-auto: create
