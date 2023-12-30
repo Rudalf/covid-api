@@ -2,10 +2,17 @@ spring:
   liquibase:
     enabled: false
   datasource:
-    url: jdbc:postgresql://local_pgdb:5432/postgres
+    url: jdbc:postgresql://localhost:5432/covid-db
     username: debreux3u
     password: Fokumi*4
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
     # hibernate.ddl-auto: create
+    
+# JWT Configuration
+app:
+  jwt:
+    secret: yourSecretKey
+    issuer: yourIssuer
+    expirationMs: 3600000 
