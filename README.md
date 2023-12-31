@@ -1,3 +1,4 @@
+DEBREUX Romain - Polytech Nancy Développement Fullstack
 # CovidFront
 
 ## Aperçu du Projet
